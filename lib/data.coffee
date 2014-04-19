@@ -1,0 +1,1 @@
+@SEX = ['male', 'female']
