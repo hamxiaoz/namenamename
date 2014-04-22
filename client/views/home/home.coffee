@@ -1,4 +1,4 @@
 Template.home.rendered = ->
   # SEO Page Title & Description
-  document.title = "New App"
-  $("<meta>", { name: "description", content: "Awesome Meteor App" }).appendTo "head"
+  document.title = "Name Name Name"
+  $("<meta>", { name: "description", content: "Vote on names" }).appendTo "head"

@@ -11,12 +11,21 @@ Router.map ()->
     yieldTemplates:
       'jumbotron': {to: 'beforeContainer'}
     waitOn: () ->
-      return [Meteor.subscribe('students')]
+      return [Meteor.subscribe('polls')]
     data: ->
       if @ready()
-        return {
-          students: Students.find {}, {sort:{name:1}}
-        }
+        return Polls.find {}, {sort:{name:1}}
+
+  @route 'showPoll',
+    path: '/polls/:_id'
+    waitOn: () ->
+      return [Meteor.subscribe('poll', @params._id)]
+    data: ->
+      if @ready()
+        return Polls.findOne @params._id
+
+  @route 'newCandidate',
+    path: '/candidates/new'
 
 ## router hooks
 Router.onBeforeAction(()-> FlashMessages.clear();)

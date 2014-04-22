@@ -3,4 +3,9 @@ template(name="jumbotron")
     .container
       .row
         .col-md-6
-          h2 Awesome Meteor App
+          ul
+            each candidates
+              li 
+                b #{name}
+                span &nbsp;
+                small #{meaning}

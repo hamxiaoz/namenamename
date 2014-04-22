@@ -1,5 +1,6 @@
 template(name="home")
-  .row
-    .col-md-6
-      each students
-        h4 #{this.summary}
+  each this
+    .row
+      .col-md-6
+        div.entry(class="{{this.sex}}")
+          a(href="{{pathFor 'showPoll'}}") #{familyName}

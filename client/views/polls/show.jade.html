@@ -1,0 +1,13 @@
+template(name='showPoll')
+  .row
+    h3 #{familyName}
+    p.text-muted #{description}
+  hr.soften
+  //- .row
+    button.btn.btn-default.btn-sm Add New
+  .row
+    ul
+      each candidates
+        li
+          h3 #{../familyName} #{name}
+          p.text-muted #{description}
