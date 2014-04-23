@@ -6,8 +6,13 @@ template(name='showPoll')
   //- .row
     button.btn.btn-default.btn-sm Add New
   .row
-    ul
-      each candidates
-        li
-          h3 #{../familyName} #{name}
-          p.text-muted #{description}
+    each candidates
+      div.entry
+        span.name #{../familyName}#{name}
+        p.text-muted #{description}
+        p.text-muted
+          span.icon-happy &nbsp;
+          span.text-muted 32
+          span &nbsp;
+          span.icon-wondering &nbsp;
+          span.text-muted 21
