@@ -3,8 +3,24 @@ template(name='showPoll')
     h3 #{familyName}
     p.text-muted #{description}
   hr.soften
-  //- .row
-    button.btn.btn-default.btn-sm Add New
+  .row
+    button.btn.btn-default.btn-sm#newCandidate Add New
+    div.modal.fade#modal
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button(type="button",class="close", data-dismiss="modal", aria-hidden="true") &times;
+            h4.modal-title New Candidate
+          div.modal-body
+            form.form
+              .form-group
+                label.control-label(for='name') Name
+                input#name.form-control(type='text', placeholder='name', required)
+              .form-group
+                label.control-label(for='description') Description (optional)
+                input#description.form-control(type='text', placeholder='description')
+              .form-group
+                button.btn.btn-primary(type="submit", value='Submit') Submit
   .row
     each candidates
       div.entry
