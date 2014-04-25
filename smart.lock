@@ -11,7 +11,8 @@
       "collection-helpers": {},
       "font-awesome-4-less": {},
       "jade": {},
-      "spin": {}
+      "spin": {},
+      "npm": {}
     },
     "packages": {
       "iron-router": {
@@ -36,8 +37,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.6.2",
-        "commit": "032bc8180adca7c40a7d518f994ee07ef54d0100"
+        "tag": "v0.7.2",
+        "commit": "5d3265ab2607949ca776a45411ce11072413546d"
       },
       "roles": {
         "git": "https://github.com/alanning/meteor-roles.git",
@@ -64,6 +65,11 @@
         "tag": "v0.2.2",
         "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
       },
+      "npm": {
+        "git": "https://github.com/arunoda/meteor-npm.git",
+        "tag": "v0.2.6",
+        "commit": "177ab6118de5bf8cffb19481343d5762ff7a2aaf"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -71,13 +77,13 @@
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
-        "tag": "v0.3.0",
-        "commit": "8093f4350dc707af51d668deaeed529e8434a090"
+        "tag": "v0.4.0",
+        "commit": "2cc6aac0d35a4e00b065c1437d540b2aefba5241"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
-        "tag": "v2.5.1",
-        "commit": "8c9bc5d3fc96705057737cb9743d555417f6e551"
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       }
     }
   }

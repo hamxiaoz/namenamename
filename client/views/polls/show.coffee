@@ -18,15 +18,7 @@ Template.showPoll.events
   'click #random': (e)->
     e.preventDefault()
 
-    r1 = randomText(shi1)
-    r2 = randomText(shi1)
-
-    $('#name').val(r1+r2)
-
-randomText = (pool)->
-  r = ''
-  while(r == '' || r == ' ' || r == '，' || r == '。' || r == '∷ ')
-    i = Math.floor(Math.random() * shi1.length)
-    r = shi1[i]
-    console.log r
-  return r
+    Meteor.call 'randomCandidate', 2, (error, result)->
+      console.log error
+      console.log result
+      $('#name').val(result[0]+result[1])

@@ -1,5 +1,7 @@
 @SEX = ['male', 'female']
 
+@INVALID_CHARACTERS = ['', ' ', '，', '。', '∷']
+
 @shi1 = 
 "
 ∷关雎

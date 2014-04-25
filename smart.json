@@ -9,6 +9,7 @@
     "collection-helpers": {},
     "font-awesome-4-less": {},
     "jade": {},
-    "spin": {}
+    "spin": {},
+    "npm": {}
   }
 }
